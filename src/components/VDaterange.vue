@@ -44,6 +44,7 @@
                 </v-list>
                 <v-date-picker
                   class="mr-4 v-date-range__picker--start v-date-range__picker"
+                  color="indigo"
                   v-model="pickerStart"
                   :locale="locale"
                   :first-day-of-week="firstDayOfWeek"
@@ -57,6 +58,7 @@
                 ></v-date-picker>
                 <v-date-picker
                   class="v-date-range__picker--end v-date-range__picker"
+                  color="indigo"
                   v-model="pickerEnd"
                   :locale="locale"
                   :first-day-of-week="firstDayOfWeek"
@@ -76,7 +78,7 @@
           <v-spacer></v-spacer>
           <v-btn flat @click="reset">Reset</v-btn>
           <v-btn flat @click="menu = false">Cancel</v-btn>
-          <v-btn @click="applyRange" color="primary" :disabled="!bothSelected"
+          <v-btn @click="applyRange" color="indigo" :disabled="!bothSelected"
             >Apply</v-btn
           >
         </v-card-actions>
